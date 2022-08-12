@@ -20,6 +20,6 @@ from carrers.views import LoginAPI
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('microsoft/callback', include('django_auth_adfs.urls'))
-    path('microsoft/callback', LoginAPI.as_view())
+    path('microsoft/callback', include('django_auth_adfs.urls'))
+    # path('microsoft/callback', LoginAPI.as_view())
 ]
